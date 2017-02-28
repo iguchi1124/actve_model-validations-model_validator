@@ -1,8 +1,24 @@
 # ActiveModel::Validations::ModelValidator
-Short description and motivation.
 
 ## Usage
-How to use my plugin.
+
+```rb
+class Registration
+  include ActiveModel::Model
+
+  attr_accessor :name, :bio
+
+  validates :user, :profile, model: true
+
+  def user
+    @user ||= User.new(name: name)
+  end
+
+  def profile
+    @profile ||= user.build_profile(bio: bio)
+  end
+end
+```
 
 ## Installation
 Add this line to your application's Gemfile:
@@ -15,14 +31,6 @@ And then execute:
 ```bash
 $ bundle
 ```
-
-Or install it yourself as:
-```bash
-$ gem install active_model-validations-model_validator
-```
-
-## Contributing
-Contribution directions go here.
 
 ## License
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
