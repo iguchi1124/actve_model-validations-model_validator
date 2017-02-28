@@ -11,7 +11,7 @@ require "action_cable/engine"
 require "sprockets/railtie"
 
 Bundler.require(*Rails.groups)
-require "active_model/model_validations_delegator"
+require "active_model/validations/model_validator"
 
 module Dummy
   class Application < Rails::Application

@@ -1,12 +1,9 @@
 $:.push File.expand_path("../lib", __FILE__)
 
-# Maintain your gem's version:
-require "active_model/model_validations_delegator/version"
-
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "active_model-model_validations_delegator"
-  s.version     = ActiveModel::ModelValidationsDelegator::VERSION
+  s.name        = "active_model-validations-model_validator"
+  s.version     = '0.1.0'
   s.author      = "Shota Iguchi"
   s.email       = "shota-iguchi@cookpad.com"
   s.summary     = "ActiveModel child model validations delegater."

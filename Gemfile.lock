@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    active_model-model_validations_delegator (0.1.0)
+    active_model-validations-model_validator (0.1.0)
       rails (~> 5.0.1)
 
 GEM
@@ -121,7 +121,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  active_model-model_validations_delegator!
+  active_model-validations-model_validator!
   pry
   pry-rails
   rails-dummy
