@@ -1,4 +1,4 @@
-# ActiveModel::ValidationsCombiner
+# ActiveModel::ModelValidationsDelegator
 Short description and motivation.
 
 ## Usage
@@ -8,7 +8,7 @@ How to use my plugin.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'active_model-validations_combiner'
+gem 'active_model-model_validations_delegator'
 ```
 
 And then execute:
@@ -18,7 +18,7 @@ $ bundle
 
 Or install it yourself as:
 ```bash
-$ gem install active_model-validations_combiner
+$ gem install active_model-model_validations_delegator
 ```
 
 ## Contributing
